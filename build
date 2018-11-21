@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sass --update src/index.sass:dist/index.css --style compressed
