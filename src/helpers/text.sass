@@ -1,14 +1,7 @@
-.text-center
-  text-align: center
+@each $name, $size in $textsize
+  .text-#{$name}
+    font-size: $size
 
-.text-justify
-  text-align: justify
-
-.text-lg
-  font-size: 2rem
-
-.text-md
-  font-size: 1rem
-
-.text-sm
-  font-size: .75rem
+@each $align in $textalign
+  .text-#{$align}
+    text-align: $align
