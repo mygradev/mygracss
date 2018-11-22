@@ -12,7 +12,7 @@
   flex-wrap: wrap
 
 @for $i from 1 through 12
-  @each $name, $size in $sizes
+  @each $name, $size in $screensize
     .#{$name}#{$i}
       @media (max-width: $size)
         flex-basis: percentage(($i/12))
