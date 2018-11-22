@@ -1,8 +1,3 @@
-$xs: 576px
-$sm: 768px
-$md: 992px
-$lg: 1200px
-
 .row
   box-sizing: border-box
   display: flex
@@ -17,27 +12,8 @@ $lg: 1200px
   flex-wrap: wrap
 
 @for $i from 1 through 12
-  .xs#{$i}
-    @media (max-width: $xs)
-      flex-basis: percentage(($i/12))
-      max-width: percentage(($i/12))
-
-  .sm#{$i}
-    @media (min-width: $xs) and (max-width: $sm)
-      flex-basis: percentage(($i/12))
-      max-width: percentage(($i/12))
-  
-  .md#{$i}
-    @media (min-width: $sm) and (max-width: $md)
-      flex-basis: percentage(($i/12))
-      max-width: percentage(($i/12))
-
-  .lg#{$i}
-    @media (min-width: $md) and (max-width: $lg)
-      flex-basis: percentage(($i/12))
-      max-width: percentage(($i/12))
-
-  .xl#{$i}
-    @media (min-width: $lg)
-      flex-basis: percentage(($i/12))
-      max-width: percentage(($i/12))
+  @each $name, $size in $sizes
+    .#{$name}#{$i}
+      @media (max-width: $size)
+        flex-basis: percentage(($i/12))
+        max-width: percentage(($i/12))
