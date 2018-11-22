@@ -1,49 +1,11 @@
 // PADDING
-// - TOP
-// - RIGHT
-// - BOTTOM 
-// - LEFT
 @for $i from 1 through 5
-  .pa#{$i}
-    padding: percentage($i/100)
-
-@for $i from 1 through 5
-  .pt#{$i}
-    padding-top: percentage($i/100)
-
-@for $i from 1 through 5
-  .pr#{$i}
-    padding-right: percentage($i/100)
-
-@for $i from 1 through 5
-  .pb#{$i}
-    padding-bottom: percentage($i/100)
-
-@for $i from 1 through 5
-  .pl#{$i}
-    padding-left: percentage($i/100)
+  @each $type, $direction in $paddingtype
+    .#{$type}#{$i}
+      padding#{$direction}: percentage($i/100)
 
 // MARGIN
-// - TOP
-// - RIGHT
-// - BOTTOM 
-// - LEFT
 @for $i from 1 through 5
-  .ma#{$i}
-    margin: percentage($i/100)
-
-@for $i from 1 through 5
-  .mt#{$i}
-    margin-top: percentage($i/100)
-
-@for $i from 1 through 5
-  .mr#{$i}
-    margin-right: percentage($i/100)
-
-@for $i from 1 through 5
-  .mb#{$i}
-    margin-bottom: percentage($i/100)
-
-@for $i from 1 through 5
-  .ml#{$i}
-    margin-left: percentage($i/100)
+  @each $type, $direction in $margintype
+    .#{$type}#{$i}
+      margin#{$direction}: percentage($i/100)
