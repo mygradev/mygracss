@@ -1,3 +1,4 @@
 #!/bin/sh
 
-sass --watch src/index.sass:dev/index.css
+sass --watch src/index.sass:dev/index.css &
+http-server -p 8081 --cors src/fonts/
