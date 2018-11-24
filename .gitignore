@@ -2,3 +2,5 @@ dist/
 dev/
 .sass-cache/
 node_modules/
+
+*.swp
