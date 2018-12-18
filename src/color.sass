@@ -15,8 +15,9 @@
 .bg-default
   background: $default
 
-.bg-black
-  background: $black
+@each $name, $color in $colors
+  .bg#{$name}
+    background: $color
 
 .text-white
   color: white
@@ -37,4 +38,8 @@
   color: $default
 
 .text-black
-  color: $black
+  color: #111111
+
+@each $name, $color in $colors
+  .text#{$name}
+    color: $color
