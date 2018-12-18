@@ -1,0 +1,47 @@
+.navbar
+  background: white
+
+  .navbar-brand
+    cursor: pointer
+    display: inline-block
+    padding: .75rem
+
+  .navbar-menu
+    float: right
+    margin: 0
+
+    li
+      list-style: none
+      display: inline-block
+      padding: .75rem
+
+      a
+        cursor: pointer
+    
+    li:hover
+      background: #eee
+
+  .navbar-menu-collapse
+    @media (max-width: 400px)
+      display: none
+
+  .navbar-menu-toggle
+    display: none
+    position: absolute
+    right: 5px
+    top: 5px
+    background: none
+    color: white
+    border: 1px solid white
+    
+    @media (max-width: 400px)
+      display: inline-block
+
+.navbar-fixed
+  position: fixed
+  width: 100%
+
+.navbar-dark
+  .navbar-menu
+    li:hover
+      background: #222
