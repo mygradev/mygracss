@@ -2,15 +2,15 @@
 @for $i from 0 through 5
   @each $type, $direction in $paddingtype
     .#{$type}#{$i}
-      padding#{$direction}: percentage($i/100)
+      padding#{$direction}: percentage($i/100) !important
 
 @for $i from 0 through 5
-  .px-#{$i}
+  .px#{$i}
     padding-left: percentage($i/100) !important
     padding-right: percentage($i/100) !important
 
 @for $i from 0 through 5
-  .py-#{$i}
+  .py#{$i}
     padding-top: percentage($i/100) !important
     padding-bottom: percentage($i/100) !important
 
@@ -18,14 +18,14 @@
 @for $i from 0 through 5
   @each $type, $direction in $margintype
     .#{$type}#{$i}
-      margin#{$direction}: percentage($i/100)
+      margin#{$direction}: percentage($i/100) !important
 
 @for $i from 0 through 5
-  .mx-#{$i}
+  .mx#{$i}
     margin-left: percentage($i/100) !important
     margin-right: percentage($i/100) !important
 
 @for $i from 0 through 5
-  .my-#{$i}
+  .my#{$i}
     margin-top: percentage($i/100) !important
     margin-bottom: percentage($i/100) !important
