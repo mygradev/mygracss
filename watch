@@ -1,4 +1,4 @@
 #!/bin/sh
 
 sass --watch src/index.sass:dev/index.css &
-http-server -p 8081 --cors src/fonts/
+./node_modules/http-server/bin/http-server -p 8081 --cors src/fonts/
