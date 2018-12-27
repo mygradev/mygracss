@@ -1,7 +1,8 @@
 .sidenav
   position: fixed
-  left: 0
   top: 0
+  left: 0
+  display: none
   height: 100vh
   width: 20%
 
@@ -34,3 +35,6 @@
 
     li:hover:not(.active)
       background: #222
+
+.sidenav.show
+  display: block
